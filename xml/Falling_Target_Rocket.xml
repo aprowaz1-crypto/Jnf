@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Craft name="Ballistic Target" parent="" initialBoundsMin="-1.2,-2.4,-1.2" initialBoundsMax="1.2,1.4,1.2" removeInvalidParts="true" price="36400" xmlVersion="14" activeCommandPod="0" localCenterOfMass="0,-0.2,0">
+  <Assembly>
+    <Parts>
+      <Part id="0" partType="CommandPod5" position="0,0.75,0" rotation="0,0,0" rootPart="true" commandPodId="0" materials="0,1,19,3,4" texture="Fuselage10">
+        <Drag drag="2.095125,2.097336,0,0,2.123798,2.1238" area="2.867412,2.867412,0,0,2.902858,2.902858"/>
+        <Config centerOfMass="0,-0.125,0" heatShieldScale="0"/>
+        <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,0,0" powerConsumption="60" stageCalculationVersion="1">
+          <Controls/>
+        </CommandPod>
+        <Gyroscope power="24" powerScale="0"/>
+        <FuelTank capacity="1466" fuel="1466" subPriority="-2"/>
+        <CrewCompartment capacity="1"/>
+        <ScalablePod mass="10.8841038"/>
+      </Part>
+      <Part id="2" partType="Fuselage1" position="0,-0.65,0" rotation="0,0,0" name="Main Stage 2" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.46,0.46" deadWeightPercentage="0" deformations="0.18,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.854939,0.854939" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="3" partType="Fuselage1" position="0,-1.53,0" rotation="0,0,0" name="Main Stage 3" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.854939,0.854939" deadWeightPercentage="0" deformations="0.18,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.947412,0.947412" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="4" partType="Fuselage1" position="0,-2.41,0" rotation="0,0,0" name="Main Stage 4" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.947412,0.947412" deadWeightPercentage="0" deformations="0.041613,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.947412,0.947412" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="5" partType="Fuselage1" position="0,-3.29,0" rotation="0,0,0" name="Main Stage 5" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.947412,0.947412" deadWeightPercentage="0" deformations="-0.019933,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.903117,0.903117" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="6" partType="Fuselage1" position="0,-4.17,0" rotation="0,0,0" name="Main Stage 6" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.903117,0.903117" deadWeightPercentage="0" deformations="-0.147336,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.62,0.62" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="7" partType="Fuselage1" position="0,-5.05,0" rotation="0,0,0" name="Main Stage 7" commandPodId="0" materials="18,4,4,0,0" texture="Fuselage10" textureTiling="4,4">
+        <Drag drag="1.623893,1.623893,0,0.185119,1.54042,1.517003" area="2.066535,2.066535,0,0.185119,2.012847,1.989357"/>
+        <Config heatShieldScale="0"/>
+        <Fuselage bottomScale="0.62,0.62" deadWeightPercentage="0" deformations="-0.138563,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.521642,0" topScale="0.5952,0.5952" version="2"/>
+        <FuelTank capacity="1466" fuel="1466" fuelType="Monopropellant" subPriority="20"/>
+      </Part>
+      <Part id="8" partType="RocketEngine1" position="0,-5.17,0" rotation="0,0,0" name="Engine" activationStage="0" commandPodId="0" materials="0,1,2,3,4" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension2">
+        <Drag drag="0.01055794,0.01055794,0,0.04856021,0.007324871,0.007324869" area="0.01408514,0.01408514,0,0.1167055,0.009996479,0.009996479"/>
+        <Config heatShieldScale="0"/>
+        <RocketEngine engineSubTypeId="PressureFed" engineTypeId="Monoprop" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" fuelType="Monopropellant" mass="0.077967" thrustOverride="320000" massFlowRateOverride="100" nozzleSize="3.2" nozzleThroatSize="1.333333" price="17777" size="1.777778" gimbalRange="4"/>
+        <InputController inputId="Throttle"/>
+      </Part>
+    </Parts>
+    <Connections>
+      <Connection partA="2" partB="0" attachPointsA="2,4" attachPointsB="2,1"/>
+      <Connection partA="3" partB="2" attachPointsA="2,4" attachPointsB="1,0"/>
+      <Connection partA="4" partB="3" attachPointsA="2,4" attachPointsB="1,0"/>
+      <Connection partA="5" partB="4" attachPointsA="2,4" attachPointsB="1,0"/>
+      <Connection partA="6" partB="5" attachPointsA="2,4" attachPointsB="1,0"/>
+      <Connection partA="7" partB="6" attachPointsA="2,4" attachPointsB="1,0"/>
+      <Connection partA="8" partB="7" attachPointsA="0" attachPointsB="1"/>
+    </Connections>
+    <Collisions/>
+    <Bodies>
+      <Body id="1" partIds="0,2,3,4,5,6,7,8" mass="38.95" position="0,-0.1,0" rotation="0,0,0" centerOfMass="0,0,0"/>
+    </Bodies>
+  </Assembly>
+  <DesignerSettings themeName="Ballistic Target">
+    <Theme name="Ballistic Target" id="25a9195c-c404-4c77-9ea1-eef798ccc505">
+      <Material name="Base Color" color="76736F" m="0.3" s="0"/>
+      <Material name="Detail Color" color="39424E" m="0" s="0.3"/>
+      <Material name="Light Metal" color="CBCDCE" m="0.85" s="0.8"/>
+      <Material name="Heavy Metal" color="76736F" m="0.85" s="0.5"/>
+      <Material name="Ablative" color="000000" m="0.85" s="0" d="0.5"/>
+      <Material name="Accent Color 1" color="B42318" m="0.1" s="0.08"/>
+      <Material name="Accent Color 2" color="39424E" m="0.1" s="0.08"/>
+      <Material name="Accent Color 3" color="76736F" m="0.1" s="0.08"/>
+      <Material name="Accent Color 4" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Accent Color 5" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Gauge Color 1" color="000000" m="0.85" s="0"/>
+      <Material name="Gauge Color 2" color="FF8000" m="0" s="0.5" e="1"/>
+      <Material name="Gauge Color 3" color="FFFFFF" m="0" s="0" e="1"/>
+      <Material name="Gauge Color 4" color="FF0000" m="0" s="0" e="1"/>
+      <Material name="Gauge Color 5" color="68D100" m="0" s="0" e="1"/>
+      <Material name="Fabric Base" color="FFFFFF" m="0" s="0" d="0.2"/>
+      <Material name="Fabric Detail" color="178BFF" m="0" s="0" d="0.1"/>
+      <Material name="Brushed Light Metal" color="CBCDCE" m="0.85" s="0.3" d="0.5"/>
+      <Material name="Brushed Heavy Metal" color="76736F" m="0.85" s="0.3" d="0.5"/>
+      <Material name="Sun Insulation" color="574204" m="0.95" s="0.95" d="0.2"/>
+      <Material name="Solar Cells" color="000046" m="0.85" s="0.5" d="0.1"/>
+      <Material name="Light" color="FFEEB9" m="0" s="1"/>
+      <Material name="Display" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Glass Exterior" color="FFFFFF" m="1" s="1" t="0.8"/>
+      <Material name="Glass Interior" color="808080" m="1" s="0" t="0.9"/>
+    </Theme>
+  </DesignerSettings>
+  <Themes>
+    <Theme name="Ballistic Target" id="25a9195c-c404-4c77-9ea1-eef798ccc505">
+      <Material name="Base Color" color="76736F" m="0.3" s="0"/>
+      <Material name="Detail Color" color="39424E" m="0" s="0.3"/>
+      <Material name="Light Metal" color="CBCDCE" m="0.85" s="0.8"/>
+      <Material name="Heavy Metal" color="76736F" m="0.85" s="0.5"/>
+      <Material name="Ablative" color="000000" m="0.85" s="0" d="0.5"/>
+      <Material name="Accent Color 1" color="B42318" m="0.1" s="0.08"/>
+      <Material name="Accent Color 2" color="39424E" m="0.1" s="0.08"/>
+      <Material name="Accent Color 3" color="76736F" m="0.1" s="0.08"/>
+      <Material name="Accent Color 4" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Accent Color 5" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Gauge Color 1" color="000000" m="0.85" s="0"/>
+      <Material name="Gauge Color 2" color="FF8000" m="0" s="0.5" e="1"/>
+      <Material name="Gauge Color 3" color="FFFFFF" m="0" s="0" e="1"/>
+      <Material name="Gauge Color 4" color="FF0000" m="0" s="0" e="1"/>
+      <Material name="Gauge Color 5" color="68D100" m="0" s="0" e="1"/>
+      <Material name="Fabric Base" color="FFFFFF" m="0" s="0" d="0.2"/>
+      <Material name="Fabric Detail" color="178BFF" m="0" s="0" d="0.1"/>
+      <Material name="Brushed Light Metal" color="CBCDCE" m="0.85" s="0.3" d="0.5"/>
+      <Material name="Brushed Heavy Metal" color="76736F" m="0.85" s="0.3" d="0.5"/>
+      <Material name="Sun Insulation" color="574204" m="0.95" s="0.95" d="0.2"/>
+      <Material name="Solar Cells" color="000046" m="0.85" s="0.5" d="0.1"/>
+      <Material name="Light" color="FFEEB9" m="0" s="1"/>
+      <Material name="Display" color="FFFFFF" m="0.1" s="0.08"/>
+      <Material name="Glass Exterior" color="FFFFFF" m="1" s="1" t="0.8"/>
+      <Material name="Glass Interior" color="808080" m="1" s="0" t="0.9"/>
+    </Theme>
+  </Themes>
+  <Symmetry/>
+</Craft>

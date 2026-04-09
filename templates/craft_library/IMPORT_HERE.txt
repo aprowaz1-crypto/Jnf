@@ -1,0 +1,17 @@
+Put your exported Juno craft XML templates in this folder.
+
+Required filename for David's Sling exact style:
+- davids_sling.xml
+
+Optional templates already supported by parser:
+- thaad.xml
+- patriot_pac3.xml
+- iskander_m.xml
+
+How to use:
+1. Export craft XML from Juno.
+2. Save file in this folder with one of the names above.
+3. Restart app.py.
+4. Generate with text like: "zroby david's sling z raketamy aim-9".
+
+The generator will prefer this template automatically when prefer_template=true.

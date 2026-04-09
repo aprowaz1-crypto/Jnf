@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juno Craft Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="page-shell"></div>
+    <main class="layout">
+      <section class="hero panel">
+        <p class="eyebrow">GitHub Codespaces + Flask + XML</p>
+        <h1>Генератор крафтів для Juno: New Origins</h1>
+        <p class="lead">
+          Інструмент працює для різних типів крафтів, а не лише для перехоплювачів:
+          ПРО-профілі, ракети-носії, дослідницькі ракети та орбітальні апарати.
+        </p>
+        <div class="hero-grid">
+          <article>
+            <span>Шаблонна генерація</span>
+            <strong>Стабільна XML-структура</strong>
+          </article>
+          <article>
+            <span>Android 16+</span>
+            <strong>Інструкції для MT Manager</strong>
+          </article>
+          <article>
+            <span>Профілі крафтів</span>
+            <strong>Параметри під задачу</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Параметри</p>
+          <h2>Згенерувати XML</h2>
+        </div>
+        <form id="generator-form">
+          <div class="ai-strip" id="ai-strip" aria-live="polite">
+            <div>
+              <span>AI-режим</span>
+              <strong id="ai-status-title">Локальний fallback</strong>
+            </div>
+            <p id="ai-status-copy">Сервер поки що працює на локальному парсері правил. Якщо додати OPENAI_API_KEY, аналіз стане глибшим.</p>
+          </div>
+
+          <label>
+            <span>Назва крафту</span>
+            <input type="text" name="craftName" value="Universal_Craft_Mk1" required>
+          </label>
+
+          <label>
+            <span>Що ти хочеш згенерувати</span>
+            <textarea
+              name="requestText"
+              id="request-text"
+              rows="6"
+              required
+              placeholder="Наприклад: хочу швидкий перехоплювач THAAD для балістичних цілей або легку орбітальну ракету для супутника"
+            >хочу універсальну орбітальну ракету для запуску супутника</textarea>
+          </label>
+
+          <div class="profile-card" id="profile-description"></div>
+
+          <section class="analysis-card" id="analysis-card" aria-live="polite">
+            <div class="analysis-head">
+              <div>
+                <span>AI-розбір запиту</span>
+                <strong id="analysis-variant">Очікування аналізу</strong>
+              </div>
+              <p id="analysis-source">Сервіс ще не проаналізував поточний опис.</p>
+            </div>
+            <div class="analysis-grid">
+              <article>
+                <span>Профіль</span>
+                <strong id="analysis-profile">-</strong>
+              </article>
+              <article>
+                <span>Стиль</span>
+                <strong id="analysis-style">-</strong>
+              </article>
+              <article>
+                <span>Ступені</span>
+                <strong id="analysis-stages">-</strong>
+              </article>
+              <article>
+                <span>Тяга</span>
+                <strong id="analysis-thrust">-</strong>
+              </article>
+              <article>
+                <span>Паливо</span>
+                <strong id="analysis-fuel">-</strong>
+              </article>
+              <article>
+                <span>Тема</span>
+                <strong id="analysis-theme">-</strong>
+              </article>
+            </div>
+          </section>
+
+          <div class="actions">
+            <button type="button" id="analyze-button" class="secondary-button">AI-аналіз</button>
+            <button type="submit" id="generate-button">Згенерувати XML</button>
+            <div class="progress" aria-live="polite" hidden>
+              <div class="progress-bar"></div>
+              <span>Генерація та підготовка завантаження...</span>
+            </div>
+          </div>
+
+          <p class="status" id="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="panel help-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Допомога</p>
+          <h2>Як завантажити XML у Juno на Android</h2>
+        </div>
+        <ol>
+          <li>Знайдіть папку гри з крафтами. Зазвичай це директорія Android/data або Documents, залежно від версії гри та файлового менеджера.</li>
+          <li>Створіть у грі простий тестовий крафт, щоб отримати готовий файл-замінник з правильною назвою та розташуванням.</li>
+          <li>Відкрийте директорію через MT Manager і знайдіть потрібний XML-файл у папці Crafts.</li>
+          <li>Підміняйте вміст згенерованим XML та зберігайте його саме в UTF-8 без BOM.</li>
+          <li>Якщо Android 11+ блокує доступ, використайте вбудований вибір папки в MT Manager і надайте дозвіл на дерево директорій.</li>
+          <li>Після заміни поверніться в гру та перевірте, чи крафт коректно з'явився в списку.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
